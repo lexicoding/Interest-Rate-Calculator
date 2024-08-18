@@ -1,5 +1,9 @@
 // spec/calculatorSpec.js
 describe('Interest Rate Calculator', function() {
+    beforeAll(() => {
+        console.log('calculateInterest:', window.calculateInterest);
+    });
+
     it('should calculate interest correctly', function() {
         // Arrange
         const principal = 1000;
@@ -7,7 +11,7 @@ describe('Interest Rate Calculator', function() {
         const time = 1;
 
         // Act
-        const result = calculateInterest(principal, rate, time);
+        const result = window.calculateInterest(principal, rate, time);
 
         // Assert
         expect(result.principal).toBe(1000);

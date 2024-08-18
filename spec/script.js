@@ -1,13 +1,14 @@
 // core calculation logic
+// script.js
 window.calculateInterest = (principal, rate, time) => {
-    let simpleInterest = (principal * rate * time) / 100;
-    let amount = principal + simpleInterest; // Principal + Interest
-    return {
-        principal: principal,
-        interest: simpleInterest,
-        amount: amount
-    };
+  let simpleInterest = (principal * rate * time) / 100;
+  let amount = principal + simpleInterest; // Principal + Interest
+  return {
+      principal: principal,
+      interest: simpleInterest,
+      amount: amount
   };
+};
   
   // DOM manipulation
   const calculate = () => {
